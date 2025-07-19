@@ -91,7 +91,7 @@ const Signup = () => {
                             value={input.email}
                             name="email"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="yogesh@gmail.com"
                         />
                     </div>
                     <div className='my-2'>
@@ -101,7 +101,7 @@ const Signup = () => {
                             value={input.phoneNumber}
                             name="phoneNumber"
                             onChange={changeEventHandler}
-                            placeholder="8080808080"
+                            placeholder="9992328080"
                         />
                     </div>
                     <div className='my-2'>
@@ -111,7 +111,7 @@ const Signup = () => {
                             value={input.password}
                             name="password"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="yogi@gmail.com"
                         />
                     </div>
                     <div className='flex items-center justify-between'>
@@ -152,7 +152,7 @@ const Signup = () => {
                     {
                         loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Signup</Button>
                     }
-                    <span className='text-sm'>Already have an account? <Link to="/login" className='text-blue-600'>Login</Link></span>
+                    <span className='text-sm'>Already have an account? <Link to="/login" className='text-green-600'>Login</Link></span>
                 </form>
             </div>
         </div>

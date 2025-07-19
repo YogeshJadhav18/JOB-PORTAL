@@ -69,7 +69,7 @@ const JobDescription = () => {
                     {isApplied ? 'Already Applied' : 'Apply Now'}
                 </Button>
             </div>
-            <h1 className='border-b-2 border-b-gray-300 font-medium py-4'>Job Description</h1>
+            <h1 className='border-b-2 border-b-gray-300 font-medium py-4'>Job Details</h1>
             <div className='my-4'>
                 <h1 className='font-bold my-1'>Role: <span className='pl-4 font-normal text-gray-800'>{singleJob?.title}</span></h1>
                 <h1 className='font-bold my-1'>Location: <span className='pl-4 font-normal text-gray-800'>{singleJob?.location}</span></h1>
