@@ -10,7 +10,8 @@ const useGetAllJobs = () => {
     useEffect(()=>{
         const fetchAllJobs = async () => {
             try {
-                const res = await axios.get(`https://job-portal-oee3.onrender.com/api/v1/job/get?keyword=${searchedQuery}`,{withCredentials:true});
+                // get replae with all
+                const res = await axios.get(`https://job-portal-oee3.onrender.com/api/v1/job/all?keyword=${searchedQuery}`,{withCredentials:true});
                 if(res.data.success){
                     dispatch(setAllJobs(res.data.jobs));
                 }
