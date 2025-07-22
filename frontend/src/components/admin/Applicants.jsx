@@ -15,14 +15,15 @@ const Applicants = () => {
     useEffect(() => {
         const fetchAllApplicants = async () => {
             try {
-                axios.defaults.withCredentials=true;
-                const res = await axios.get(`https://job-portal-oee3.onrender.com/api/v1/applicants`);
-                if(res.data.success){
+                // axios.defaults.withCredentials=true;
+                    const res = await axios.get(`${APPLICATION_API_END_POINT}/${params.id}/applicants`, { withCredentials: true });
+                // const res = await axios.get(`https://job-portal-oee3.onrender.com/api/v1/applicants`);
+                // if(res.data.success){
                 dispatch(setAllApplicants(res.data.job));
-                }
+                
             } catch (error) {
                 console.log(error);
-                toast.error(error.response.data.message);
+                // toast.error(error.response.data.message);
             }
         }
         fetchAllApplicants();
