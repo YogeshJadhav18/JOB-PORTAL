@@ -53,7 +53,7 @@ const PostJob = () => {
                 navigate("/admin/jobs");
             }
         } catch (error) {
-            toast.error(error.response.message);
+            toast.error(error.response?.error?.message || "soemtong missing");
         } finally{
             setLoading(false);
         }
