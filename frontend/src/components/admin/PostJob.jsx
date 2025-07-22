@@ -41,8 +41,8 @@ const PostJob = () => {
     const submitHandler = async (e) => {
         e.preventDefault();
         try {
-            setLoading(true);
-            const res = await axios.post(`https://job-portal-oee3.onrender.com/api/v1/job/post`, input,{
+            dispatch(setLoading(true));
+            const res = await axios.post(`https://job-portal-oee3.onrender.com/api/v1/job/postjob`, input,{
                 headers:{
                     'Content-Type':'application/json'
                 },
